@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+
 import Header from "@/components/utils/Header";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} leading-normal tracking-normal text-white gg `} >
+      <body className={`${inter.className} leading-normal tracking-normal text-white `} >
        <div>
          <Header/>
          {children}
