@@ -5,7 +5,8 @@ const nextConfig = {
         "assets.aceternity.com",
         "lh3.googleusercontent.com",
         "utfs.io",
-        "images.unsplash.com"
+        "images.unsplash.com",
+        "flowbite.s3.amazonaws.com"
       ],
     },
   };
