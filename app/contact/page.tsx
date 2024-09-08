@@ -1,11 +1,21 @@
-import React from 'react'
+"use client"
+import React, { useEffect } from 'react'
 import '../globals.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
+
 const page = () => {
+
+    useEffect(() => {
+        AOS.init();
+    }, [])
     return (
         <div>
             <section className="bg-orange-50 dark:bg-slate-800" id="contact">
                 <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
-                    <div className="mb-4">
+                    <div data-aos="zoom-in" data-aos-duration="3000"  className="mb-4">
                         <div className="mb-6 max-w-3xl text-center sm:text-center md:mx-auto md:mb-12">
                             <p className="text-base font-semibold uppercase tracking-wide text-orange-400 dark:text-orange-200">
                                 Contact
@@ -21,7 +31,7 @@ const page = () => {
                     </div>
                     <div className="flex items-stretch justify-center">
                         <div className="grid md:grid-cols-2">
-                            <div className="h-full pr-6">
+                            <div data-aos="fade-right" data-aos-duration="3000"  className="h-full pr-6">
                                 <p className="mt-3 mb-12 text-lg text-gray-600 dark:text-slate-400">
                                     Class aptent taciti sociosqu ad
                                     litora torquent per conubia nostra, per inceptos himenaeos. Duis nec ipsum orci. Ut scelerisque
@@ -83,24 +93,24 @@ const page = () => {
                                     </li>
                                 </ul>
                             </div>
-                            <div className="card h-fit max-w-6xl p-5 md:p-12" id="form">
+                            <div data-aos="fade-left" data-aos-duration="3000"  className="card h-fit max-w-6xl p-5 md:p-12" id="form">
                                 <h2 className="mb-4 text-2xl font-bold dark:text-white">Ready to Get Started?</h2>
                                 <form id="contactForm">
                                     <div className="mb-6">
                                         <div className="mx-0 mb-1 sm:mb-4">
                                             <div className="mx-0 mb-1 sm:mb-4">
-                                                <label htmlFor="name" className="pb-1 text-xs uppercase tracking-wider"></label><input type="text" id="name" autoComplete="given-name" placeholder="Your name" className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0" name="name" />
+                                                <label htmlFor="name" className="pb-1 text-xs uppercase tracking-wider"></label><input type="text" id="name" autoComplete="given-name" placeholder="Your name" className="mb-2 w-full rounded-xl border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0" name="name" />
                                             </div>
                                             <div className="mx-0 mb-1 sm:mb-4">
-                                                <label htmlFor="email" className="pb-1 text-xs uppercase tracking-wider"></label><input type="email" id="email" autoComplete="email" placeholder="Your email address" className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0" name="email" />
+                                                <label htmlFor="email" className="pb-1 text-xs uppercase tracking-wider"></label><input type="email" id="email" autoComplete="email" placeholder="Your email address" className="mb-2 w-full rounded-xl border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0" name="email" />
                                             </div>
                                         </div>
                                         <div className="mx-0 mb-1 sm:mb-4">
-                                            <label htmlFor="textarea" className="pb-1 text-xs uppercase tracking-wider"></label><textarea id="textarea" name="textarea"  placeholder="Write your message..." className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"></textarea>
+                                            <label htmlFor="textarea" className="pb-1 text-xs uppercase tracking-wider"></label><textarea id="textarea" name="textarea" placeholder="Write your message..." className="mb-2 w-full rounded-xl border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"></textarea>
                                         </div>
                                     </div>
                                     <div className="text-center">
-                                        <button type="submit" className="w-full bg-orange-800 text-white px-6 py-3 font-xl rounded-md sm:mb-0">Send Message</button>
+                                        <button type="submit" className="w-full bg-orange-800 text-white px-6 py-3 font-xl rounded-xl sm:mb-0">Send Message</button>
                                     </div>
                                 </form>
                             </div>

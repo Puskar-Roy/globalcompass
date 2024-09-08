@@ -2,7 +2,6 @@
 "use client"
 import Image from "next/image";
 import { FeaturesSectionDemo } from "@/components/ui/feature-section";
-import { ContainerScroll } from "@/components/ui/container-scroll-animation";
 import { ModelButton } from "@/components/ui/ModelButton";
 import "./globals.css";
 import { CarouselDemo } from "@/components/ui/Carousel";
