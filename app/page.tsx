@@ -8,6 +8,7 @@ import { CarouselDemo } from "@/components/ui/Carousel";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
+import Faq from "@/components/ui/Faq";
 export default function Home() {
   useEffect(() => {
     AOS.init();
@@ -385,7 +386,12 @@ export default function Home() {
 
 
       </div>
+      <div className="text-black my-10">
 
+
+      <Faq/>
+      
+</div>
 
       <div className="gg">
 
@@ -425,8 +431,10 @@ export default function Home() {
 
             <ModelButton />
           </div>
-        </section>
+        </section>       
+
       </div>
+
     </main>
   );
 }
